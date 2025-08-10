@@ -1,0 +1,66 @@
+body {
+  font-family: "Lemon Milk", sans-serif;
+  text-align: center;
+  background: #353535;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  color: white;
+}
+
+img {
+  margin: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  margin: 10px;
+}
+
+::selection {
+  background: #43c9bf;
+  color: #ffffff;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("/assets/font/LemonMilk-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("/assets/font/LemonMilk-Medium.woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("/assets/font/LemonMilk-Bold.woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("/assets/font/LemonMilk-UltraLight.woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mels";
+  src: url("/assets/font/Mels-Regular.woff2");
+  font-display: swap;
+}
