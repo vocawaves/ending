@@ -16,7 +16,8 @@
   padding: 2rem 1.5rem;
 }
 
-.notfound-text .hero-logo {
+.notfound-text .hero-logo,
+.notfound-text .uk-logo {
   margin: 0;
 }
 

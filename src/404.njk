@@ -12,3 +12,24 @@ noindex: true
             <a class="home-link" href="/">Return home</a>
         </div>
     </main>
+
+    <template id="uk-notfound">
+        <main class="notfound vocauk">
+            <div class="notfound-text">
+                <img class="uk-logo" src="/assets/img/vocauk/logo.webp" width="1000" height="206" alt="VOCA-UK Logo">
+                <h1>404</h1>
+                <h2>Page not found</h2>
+                <a class="home-link" href="/vocauk/">Return to VOCA-UK</a>
+            </div>
+        </main>
+    </template>
+
+    <script>
+        // GitHub Pages only serves the root 404.html, so VOCA-UK paths swap to their own branding here.
+        if (location.pathname.startsWith('/vocauk/')) {
+            document.querySelector('.notfound').replaceWith(document.getElementById('uk-notfound').content);
+            document.title = 'Page not found | VOCA-UK';
+            document.querySelector('meta[name="theme-color"]').content = '#1ebab0';
+            document.head.insertAdjacentHTML('beforeend', '<link rel="icon" href="/assets/img/vocauk/favicon.ico">');
+        }
+    </script>
