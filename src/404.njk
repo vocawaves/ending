@@ -25,7 +25,6 @@ noindex: true
     </template>
 
     <script>
-        // GitHub Pages only serves the root 404.html, so VOCA-UK paths swap to their own branding here.
         if (location.pathname.startsWith('/vocauk/')) {
             document.querySelector('.notfound').replaceWith(document.getElementById('uk-notfound').content);
             document.title = 'Page not found | VOCA-UK';
