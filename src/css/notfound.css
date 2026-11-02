@@ -1,0 +1,38 @@
+.notfound {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  text-align: center;
+}
+
+.notfound-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+.notfound-text .hero-logo {
+  margin: 0;
+}
+
+.notfound h1 {
+  font-size: clamp(5rem, 16vw, 11rem);
+  line-height: 1;
+}
+
+.notfound h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin: 0;
+}
+
+.home-link {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+}

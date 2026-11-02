@@ -1,0 +1,42 @@
+[
+  {
+    "name": "MultiVideo",
+    "url": "https://github.com/vocawaves/multivideo",
+    "description": "The VOCAWAVES video player"
+  },
+  {
+    "name": "Manager",
+    "url": "https://github.com/vocawaves/Manager",
+    "description": "Our second playback management tool"
+  },
+  {
+    "name": "Bardagi",
+    "url": "https://github.com/vocawaves/bardagi",
+    "description": "A niconico-style comment overlay for the desktop"
+  },
+  {
+    "name": "ray-configurator",
+    "url": "https://github.com/vocawaves/ray-configurator",
+    "description": "A GUI for configuring ray-mmd"
+  },
+  {
+    "name": "ray-edits",
+    "url": "https://github.com/vocawaves/ray-edits",
+    "description": "Custom ray-mmd materials and FX"
+  },
+  {
+    "name": "bowlroll-english",
+    "url": "https://github.com/vocawaves/bowlroll-english",
+    "description": "Translator script for BowlRoll into English"
+  },
+  {
+    "name": "vlc-bgm",
+    "url": "https://github.com/vocawaves/vlc-bgm",
+    "description": "A web interface for using VLC as a background music player"
+  },
+  {
+    "name": "vlc-switch-config",
+    "url": "https://github.com/vocawaves/vlc-switch-config",
+    "description": "Switching script for VLC configurations"
+  }
+]

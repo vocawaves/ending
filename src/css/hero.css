@@ -1,0 +1,105 @@
+.hero {
+  --h: max(min(100svh, 62rem), 36rem);
+  position: relative;
+  min-height: var(--h);
+  background: black;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-photo {
+  position: absolute;
+  top: calc(var(--h) * -0.184);
+  left: calc(68% - var(--h) * 0.704);
+  width: calc(var(--h) * 1.6);
+  height: calc(var(--h) * 1.2);
+  max-width: none;
+  filter: brightness(0.65);
+  animation: house-lights 2.4s ease-out both;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 30%, black 75%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 30%, black 75%, transparent);
+}
+
+@keyframes house-lights {
+  from {
+    opacity: 0;
+    filter: brightness(1.6);
+  }
+}
+
+.hero-text {
+  position: relative;
+  padding-block: 2rem;
+}
+
+.hero-logo {
+  width: clamp(5rem, 8vw, 7rem);
+  margin-bottom: 1.5rem;
+}
+
+.hero-years {
+  font-family: var(--font-display);
+  font-weight: 100;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  margin: 0.75rem 0;
+}
+
+.hero-thanks {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.hero-wave {
+  display: block;
+  width: 100%;
+  height: clamp(4rem, 10vw, 11rem);
+  background: black;
+}
+
+.wave {
+  display: block;
+  width: 100%;
+  height: clamp(3rem, 7vw, 8rem);
+  background: var(--from);
+  fill: var(--to);
+}
+
+.wave + *,
+.hero-wave + * {
+  position: relative;
+  margin-top: -1px;
+}
+
+.wave-flip {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 48rem) {
+  .hero {
+    display: block;
+    min-height: 0;
+  }
+
+  .hero-photo {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 44% 65%;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .hero-text {
+    padding-block: 0 2rem;
+    margin-top: -2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo {
+    animation: none;
+  }
+}

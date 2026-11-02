@@ -1,0 +1,15 @@
+{
+  "name": "ending",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.14",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7",
+    "prettier": "3.9.10"
+  }
+}

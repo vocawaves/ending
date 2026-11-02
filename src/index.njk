@@ -1,0 +1,185 @@
+---
+layout: layouts/base.njk
+title: VOCAWAVES
+description: VOCAWAVES has concluded. A record of our concerts and contributions to vocalsynth culture, 2021 to 2025.
+---
+{% from "macros.njk" import setlist, wave %}
+    <svg style="display: none">
+        <symbol id="wave" viewBox="0 0 2560 240" preserveAspectRatio="none">
+            <path d="M0 120C320 40 640 40 960 110S1600 190 1920 110S2400 50 2560 100V240H0Z" />
+        </symbol>
+    </svg>
+
+    <header class="hero" id="top">
+        <img class="hero-photo" src="/assets/img/icon-hero.webp" width="2000" height="1500"
+            alt="Hatsune Miku on stage at ICon 2025">
+
+        <div class="hero-text wrap">
+            <img class="hero-logo" src="/assets/img/vocawave-icon.webp" width="1000" height="897" alt="VOCAWAVES Logo">
+            <h1>VOCAWAVES has concluded</h1>
+            <p class="hero-years">2021 - 2025</p>
+            <p class="hero-thanks">Thank you for participating over the years!</p>
+        </div>
+    </header>
+
+    <svg class="hero-wave" viewBox="0 0 2560 240" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#8350d1" d="M0 120C320 40 640 40 960 110S1600 190 1920 110S2400 50 2560 100V240H0Z" />
+        <path fill="#424242" transform="translate(0 60)" d="M0 120C320 40 640 40 960 110S1600 190 1920 110S2400 50 2560 100V240H0Z" />
+    </svg>
+
+    <main>
+        <section class="history" aria-labelledby="history-title">
+            <div class="wrap">
+                <h2 id="history-title">Our story</h2>
+                <p class="intro">From the first idea to hologram concerts in the UK and Germany.</p>
+
+                <ol class="timeline">
+                    {%- for item in timeline %}
+                    {%- if item.type == "milestone" %}
+                    <li class="milestone{% if item.key %} milestone-key{% endif %}">
+                        <time datetime="{{ item.date }}">{{ item.dateLabel }}</time>
+                        <p>{{ item.text }}</p>
+                    </li>
+                    {%- else %}
+                    <li class="show">
+                        <time datetime="{{ item.date }}">{{ item.dateLabel }}</time>
+                        <div class="show-body">
+                            <h3>{{ item.title }}</h3>
+                            <p class="show-place">{{ item.place }}</p>
+                            <p>{{ item.text }}</p>
+                            {%- if item.link %}
+                            <p><a href="{{ item.link.url }}" target="_blank" rel="noopener" class="external">{{ item.link.label }}<span class="sr-only"> (opens in a new tab)</span></a></p>
+                            {%- endif %}
+                            {{ setlist(item.setlist) }}
+                        </div>
+                        {%- if item.photo %}
+                        <img class="show-photo" src="{{ item.photo.src }}" width="{{ item.photo.width }}" height="{{ item.photo.height }}" loading="lazy"
+                            alt="{{ item.photo.alt }}">
+                        {%- endif %}
+                    </li>
+                    {%- endif %}
+                    {%- endfor %}
+                </ol>
+
+                <h2 class="after-title" id="after-title">Post-disbandment projects</h2>
+                <p class="intro">Projects that came out after we disbanded.</p>
+
+                <ul class="after-list" aria-labelledby="after-title">
+                    {%- for project in projects %}
+                    <li class="after-item">
+                        <time datetime="{{ project.date }}">{{ project.dateLabel }}</time>
+                        <div class="show-body">
+                            <h3>{{ project.title }}</h3>
+                            <p class="show-place">{{ project.place }}</p>
+                            <p>{{ project.text }}</p>
+                            {{ setlist(project.setlist) }}
+                        </div>
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </div>
+        </section>
+
+        <section class="work" aria-labelledby="work-title">
+            {{ wave("grey", "purple", true) }}
+            <div class="work-title">
+                <div class="wrap">
+                <h2 id="work-title">What we did</h2>
+                <p class="intro">We were a non-profit association set up to grow knowledge and appreciation of Japanese
+                    vocalsynth culture outside Japan. Here is how we contributed.</p>
+                </div>
+            </div>
+
+            {{ wave("purple", "teal") }}
+            <div class="band band-teal">
+                <div class="wrap band-grid">
+                    <div>
+                        <h3>Hologram concerts</h3>
+                        <p>We operated the entire setup, from screens to projection equipment. Every set list
+                            was built for its event with fully bespoke renders, so no two shows were the same.</p>
+                        <p>After each event, the audience could take a picture with their favourite character on stage.</p>
+                    </div>
+                    <div class="band-photos">
+                        <img src="/assets/img/una.webp" width="864" height="567" loading="lazy"
+                            alt="Otomachi Una on the stage">
+                        <img src="/assets/img/photosession.webp" width="1132" height="1243" loading="lazy"
+                            alt="Post-concert photo session">
+                    </div>
+                </div>
+            </div>
+
+            {{ wave("teal", "yellow", true) }}
+            <div class="band band-yellow">
+                <div class="wrap band-grid band-grid-flip">
+                    <div>
+                        <h3>Live sound and video</h3>
+                        <p>We provided A/V support for <a href="https://rakucon.co.uk" target="_blank" rel="noopener">RakuCon 2024</a> in
+                            Manchester, maintaining equipment, running sound and video, and managing the stages. In earlier years we also gave concerts there as
+                            VOCA-UK.</p>
+                    </div>
+                    <div class="band-photos">
+                        <img src="/assets/img/raku.webp" width="403" height="288" loading="lazy"
+                            alt="Presenters on stage at RakuCon Manchester">
+                        <img src="/assets/img/tech.webp" width="500" height="309" loading="lazy"
+                            alt="Teto doing some very professional audio mixing">
+                    </div>
+                </div>
+            </div>
+
+            {{ wave("yellow", "red") }}
+            <div class="band band-red">
+                <div class="wrap">
+                    <h3>Software and tools</h3>
+                    <p>We built our own tools for our shows and for the events we worked with.Most of it is open source and available on
+                        <a href="https://github.com/vocawaves" target="_blank" rel="noopener">GitHub</a>.
+                    </p>
+                    <ul class="tools">
+                        {%- for tool in tools %}
+                        <li><a href="{{ tool.url }}" target="_blank" rel="noopener">{{ tool.name }}</a> {{ tool.description }}</li>
+                        {%- endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            {{ wave("red", "blue", true) }}
+            <div class="band band-blue">
+                <div class="wrap band-grid">
+                    <div>
+                        <h3>Characters and content</h3>
+                        <p>Koemoto Jenna (声元ジェンナ) was our official mascot, created to visualise our mission
+                            of promoting vocalsynth culture.
+                        </p>
+                        <p>We also created a range of stickers and other merchandise which were distributed for free at events.</p>
+                    </div>
+                    <figure class="mascot">
+                        <img src="/assets/img/mascot.webp" width="720" height="1448" loading="lazy"
+                            alt="Koemoto Jenna, with purple hair and a jacket in the VOCAWAVES colours, making a peace sign">
+                        <figcaption>Art by nilotan</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {{ wave("blue", "ink") }}
+    <footer class="footer">
+        <div class="wrap">
+            <img class="footer-logo" src="/assets/img/vocawaves-long-white.webp" width="1699" height="250" loading="lazy"
+                alt="VOCAWAVES">
+            <p class="footer-contact"><a href="mailto:contact@vocawaves.org">contact@vocawaves.org</a></p>
+            <ul class="socials">
+                {%- for social in socials %}
+                <li><a href="{{ social.url }}" target="_blank" rel="noopener">{{ social.name }}</a></li>
+                {%- endfor %}
+            </ul>
+            <p>Image Credit: YYB, BeammanP, Chestnutscoop</p>
+            <p class="legal">VOCAWAVES was a doujin ("fanmade") work not affiliated with any of the original content
+                creators unless where explicitly stated. Characters, songs and other data were used under non-commercial
+                licenses or guidelines where advised by the related party. We operated as individuals under the United
+                Kingdom's structure of an unincorporated association.</p>
+            <p class="legal">&copy; 2023-2025 VOCAWAVES. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a class="to-top" href="#top" aria-label="Back to top"></a>
+    <script src="/assets/js/index.js"></script>

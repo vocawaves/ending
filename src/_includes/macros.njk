@@ -1,0 +1,18 @@
+{% macro wave(from, to, flip) -%}
+<svg class="wave{% if flip %} wave-flip{% endif %}" style="--from: var(--{{ from }}); --to: var(--{{ to }})" aria-hidden="true"><use href="#wave" /></svg>
+{%- endmacro %}
+
+{% macro setlist(songs) -%}
+{% if songs -%}
+<details>
+    <summary>Set list, {{ songs | length }} songs</summary>
+    <div class="setlist-clip">
+        <ol class="setlist">
+            {%- for song in songs %}
+            <li>{{ song }}</li>
+            {%- endfor %}
+        </ol>
+    </div>
+</details>
+{%- endif %}
+{%- endmacro %}

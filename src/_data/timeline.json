@@ -1,0 +1,197 @@
+[
+  {
+    "type": "milestone",
+    "date": "2021-10",
+    "dateLabel": "October 2021",
+    "text": "Initial ideas in the Hatsune Miku bot server"
+  },
+  {
+    "type": "milestone",
+    "date": "2022-07",
+    "dateLabel": "July 2022",
+    "text": "First online concert, under the name VOCA-UK"
+  },
+  {
+    "type": "milestone",
+    "date": "2022-08",
+    "dateLabel": "August 2022",
+    "text": "First \"MINI\" in-person concert"
+  },
+  {
+    "type": "milestone",
+    "date": "2023-08",
+    "dateLabel": "August 2023",
+    "text": "Second in-person concert"
+  },
+  {
+    "type": "milestone",
+    "date": "2023-10",
+    "dateLabel": "October 2023",
+    "text": "Final in-person concert as VOCA-UK"
+  },
+  {
+    "type": "milestone",
+    "date": "2024-01",
+    "dateLabel": "January 2024",
+    "text": "Project restarted as VOCAWAVES",
+    "key": true
+  },
+  {
+    "type": "show",
+    "date": "2024-07-27",
+    "dateLabel": "27 July 2024",
+    "title": "South Yorkshire Anime Festival",
+    "place": "Doncaster, UK",
+    "text": "Our first hologram concert: around 40 minutes of custom MMD visuals (including custom covers), with our own projection equipment and playback software. GUMI, the MEIKA Twins, Otomachi Una, IA, Kasane Teto and Yuzuki Yukari performed.",
+    "link": {
+      "url": "https://www.youtube.com/shorts/0AjODK0IRYw",
+      "label": "Watch a clip on YouTube"
+    },
+    "setlist": [
+      "INTERGALACTICA",
+      "Yomosugara Kimi Omou",
+      "Heart Pie Dancehall",
+      "Donut Hole",
+      "Mozaik Role",
+      "Hate It. Hate It. Jigahidai",
+      "ECHO",
+      "Asu no Yozora Shoukaihan",
+      "Yoshiwara Lament",
+      "Kisaragi Attention",
+      "Booo!",
+      "This Special Tone is Wonderful",
+      "Ochame Function",
+      "Marine Dreamin'",
+      "KING",
+      "Megu Megu Fire Endless Night",
+      "Freedom Lolita",
+      "ONEgai Darling"
+    ],
+    "photo": {
+      "src": "/assets/img/doncaster.webp",
+      "width": 500,
+      "height": 309,
+      "alt": "GUMI on stage at the South Yorkshire Anime Festival"
+    }
+  },
+  {
+    "type": "show",
+    "date": "2024-08-31",
+    "dateLabel": "31 August 2024",
+    "title": "VOCABERLIN Hatsune Miku Geburtstag",
+    "place": "Berlin, Germany",
+    "text": "VOCABERLIN asked us to provide a concert for their largest Miku birthday event yet. We produced a special show with custom renders featuring Hatsune Miku.",
+    "link": {
+      "url": "https://vocaberlin.de",
+      "label": "Visit VOCABERLIN"
+    },
+    "setlist": [
+      "Happy Happy Birthday",
+      "39",
+      "39 Music",
+      "Ai no Uta",
+      "Blue Star",
+      "Greenlights Serenade",
+      "Kocchi Muite Baby",
+      "Koi Suru VOC@LOID",
+      "Love Words IV",
+      "Miku Miku ni Shite Ageru",
+      "My Time",
+      "SPiCa",
+      "Birthday Song for Miku",
+      "GETCHA",
+      "Teo",
+      "The Disappearance of Hatsune Miku",
+      "Unknown Mother Goose"
+    ],
+    "photo": {
+      "src": "/assets/img/vocaberlin-1200.webp",
+      "width": 1200,
+      "height": 554,
+      "alt": "VOCABERLIN and VOCAWAVES representatives posing with a Miku hologram"
+    }
+  },
+  {
+    "type": "show",
+    "date": "2024-12-21",
+    "dateLabel": "21 December 2024",
+    "title": "VOCAWAVES Christmas Special",
+    "place": "Great York Anime Festival, York, UK",
+    "text": "A festive concert that brought a live guitarist to our shows for the first time, with Icy Seas Music on stage. We also ran the stage and did all audio mixing for the day.",
+    "link": {
+      "url": "https://www.youtube.com/shorts/NPZsv9UvQ1s",
+      "label": "Watch a clip on YouTube"
+    },
+    "setlist": [
+      "LIVEDRIVE",
+      "1,2 Fanclub",
+      "Override",
+      "Kokuhaku Rival Sengen",
+      "Six Trillion Years and Overnight Story",
+      "Teto Teto in the Wonder Night",
+      "ENVY BABY",
+      "Go My Way",
+      "Love will surely skyrocket",
+      "Very Merry Happy Christmas",
+      "Snowman",
+      "Melt",
+      "The Snow White Princess Is",
+      "Star Night Snow",
+      "Snow Fairy Story",
+      "Colorful Marine Snow",
+      "Melancholic",
+      "Egorock",
+      "Mesmerizer"
+    ],
+    "photo": {
+      "src": "/assets/img/york.webp",
+      "width": 638,
+      "height": 368,
+      "alt": "A guitarist playing beside Rin while the crowd waves glowsticks"
+    }
+  },
+  {
+    "type": "show",
+    "date": "2025-05-31",
+    "dateLabel": "31 May 2025",
+    "title": "ICon 2025",
+    "place": "Imperial College London, UK",
+    "text": "We created a custom set list for a VOCALOID society's performance at a university event. This was our first time solely providing the renders for a show.",
+    "link": {
+      "url": "https://www.youtube.com/watch?v=Afgzrltlewo",
+      "label": "Watch the video on YouTube"
+    },
+    "setlist": [
+      "World is Mine",
+      "Rolling Girl",
+      "God-ish",
+      "Meltdown",
+      "Romeo and Cinderella",
+      "Two Faced Lovers",
+      "Senbonzakura",
+      "Tale of the Deep Sea Lily",
+      "SPiCa",
+      "Migikata no Chou",
+      "Just Be Friends",
+      "Intergalactic Bound",
+      "Nostalogic",
+      "Remote Control",
+      "Rabbit Hole",
+      "Magical Cure! Love Shot!",
+      "Mesmerizer"
+    ],
+    "photo": {
+      "src": "/assets/img/icon-stage.webp",
+      "width": 1000,
+      "height": 667,
+      "alt": "Hatsune Miku on stage at ICon 2025"
+    }
+  },
+  {
+    "type": "milestone",
+    "date": "2025-06-03",
+    "dateLabel": "3 June 2025",
+    "text": "VOCAWAVES disbanded",
+    "key": true
+  }
+]

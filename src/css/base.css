@@ -1,0 +1,185 @@
+:root {
+  color-scheme: dark;
+  --teal: #43c9bf;
+  --yellow: #f5c03b;
+  --red: #cb2f5e;
+  --blue: #4d65de;
+  --purple: #8350d1;
+  --ink: #212121;
+  --grey: #353535;
+  --grey-light: #424242;
+  --muted: #c9c9c9;
+  --border: rgb(255 255 255 / 0.28);
+  --radius: 1.25rem;
+  --font-display: 'Lemon Milk', sans-serif;
+  --external: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/%3E%3C/svg%3E");
+}
+
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('/assets/font/LemonMilk-Regular.woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('/assets/font/LemonMilk-Medium.woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('/assets/font/LemonMilk-Bold.woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('/assets/font/LemonMilk-UltraLight.woff2');
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mels';
+  src: url('/assets/font/Mels-Regular.woff2');
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: white;
+  font-family: 'Mels', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1em;
+  max-width: 62ch;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 2px;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  transition: text-decoration-color 0.2s ease;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--teal);
+  color: white;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.wrap {
+  width: min(100% - 3rem, 72rem);
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  font-weight: 700;
+  max-width: 9.5em;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.intro {
+  font-size: 1.3rem;
+  color: var(--muted);
+}
+
+.external::after {
+  content: '';
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.35em;
+  background: currentColor;
+  -webkit-mask: var(--external) center / contain no-repeat;
+  mask: var(--external) center / contain no-repeat;
+}
+
+summary,
+.home-link {
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 0.06);
+  font-family: var(--font-display);
+  font-weight: 500;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+summary:hover,
+.home-link:hover {
+  background: rgb(255 255 255 / 0.14);
+  border-color: rgb(255 255 255 / 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  a,
+  summary,
+  .home-link {
+    transition: none;
+  }
+}
