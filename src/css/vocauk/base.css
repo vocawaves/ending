@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Lemon Milk Classic';
+  src: url('/assets/font/vocauk/LEMONMILK-Regular.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('/assets/font/vocauk/signika-latin-400-normal.woff2');
+  font-display: swap;
+}
+
+.vocauk {
+  --teal: #1ebab0;
+  --purple: #288781;
+  --ink: #1a1a1a;
+  --muted: #b3b3b3;
+  --font-display: 'Lemon Milk Classic', sans-serif;
+  background: var(--ink);
+  font-family: 'Signika', sans-serif;
+}
+
+.vocauk h1,
+.vocauk h2,
+.vocauk h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.vocauk b {
+  color: var(--teal);
+}
+
+.vocauk .footer {
+  border-top: 1px solid var(--border);
+}
+
+.vocauk .to-top {
+  right: 30px;
+  bottom: 20px;
+  border: 0;
+  background: var(--teal);
+}
+
+.vocauk .to-top:hover {
+  background: var(--purple);
+}

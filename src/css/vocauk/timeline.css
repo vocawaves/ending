@@ -1,0 +1,62 @@
+.vocauk .timeline time {
+  justify-self: start;
+  align-self: start;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.9rem;
+  border-radius: 50px;
+  background: var(--purple);
+  white-space: nowrap;
+}
+
+.vocauk .setlist {
+  text-align: left;
+}
+
+.vocauk ul.setlist {
+  list-style-type: disc;
+}
+
+.vocauk .timeline::before {
+  width: 2px;
+  margin-left: -1px;
+  background: var(--purple);
+}
+
+.vocauk .show h3 {
+  font-family: 'Signika', sans-serif;
+}
+
+.vocauk .uk-milestone-link {
+  font-family: 'Signika', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (min-width: 62.01rem) {
+  .vocauk .timeline {
+    --rail: 50%;
+  }
+
+  .vocauk .timeline > li {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 5rem;
+  }
+
+  .vocauk .timeline > li time {
+    justify-self: end;
+    margin-bottom: 0;
+  }
+
+  .vocauk .timeline > li:nth-child(even) time {
+    order: 2;
+    justify-self: start;
+  }
+
+  .vocauk .timeline > li:nth-child(even) > div {
+    text-align: right;
+  }
+
+  .vocauk .timeline > li:nth-child(even) p {
+    margin-left: auto;
+  }
+}

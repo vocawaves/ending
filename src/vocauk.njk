@@ -1,0 +1,162 @@
+---
+layout: layouts/base.njk
+title: VOCA-UK
+favicon: /assets/img/vocauk/favicon.ico
+ogImage: /assets/img/vocauk/og.jpg
+ogImageWidth: 1500
+ogImageHeight: 594
+ogImageAlt: VOCA-UK logo above Kagamine Len, Kagamine Rin, Hatsune Miku, Megurine Luka and IA
+themeColor: '#1ebab0'
+description: Before VOCAWAVES there was VOCA-UK, a fan VOCALOID concert project based in the UK, active from 2022 to 2023.
+---
+{% from "macros.njk" import setlist %}
+<div class="vocauk">
+    <header class="hero" id="top">
+        <video class="uk-hero-video" playsinline autoplay muted loop poster="/assets/img/vocauk/hero-poster.webp" aria-hidden="true">
+            <source src="/assets/img/vocauk/hero.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-text wrap">
+            <img class="uk-logo" src="/assets/img/vocauk/logo.webp" width="1000" height="206" alt="VOCA-UK Logo">
+            <h1><b>Fan</b> VOCALOID concert</h1>
+            <p class="hero-years">2022 - 2023</p>
+            <p class="hero-thanks">Thank you for being a part of our journey!</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="history" aria-labelledby="history-title">
+            <div class="wrap uk-center">
+                <h2 id="history-title"><b>Our</b> story</h2>
+                <p class="intro">VOCA-UK began as a goal to bring VOCALOID culture to Northern England, as the official
+                    events and organisations were all based in London.</p>
+
+                <ol class="timeline">
+                    {%- for item in vocauk.timeline %}
+                    {%- if item.type == "milestone" %}
+                    <li class="milestone{% if item.key %} milestone-key{% endif %}">
+                        <time datetime="{{ item.date }}">{{ item.dateLabel }}</time>
+                        <div>
+                            <p>{{ item.text }}</p>
+                            {%- if item.link.external %}
+                            <p class="uk-milestone-link"><a href="{{ item.link.url }}" target="_blank" rel="noopener" class="external">{{ item.link.label }}<span class="sr-only"> (opens in a new tab)</span></a></p>
+                            {%- elif item.link %}
+                            <p class="uk-milestone-link"><a href="{{ item.link.url }}">{{ item.link.label }}</a></p>
+                            {%- endif %}
+                        </div>
+                    </li>
+                    {%- else %}
+                    <li class="show">
+                        <time datetime="{{ item.date }}">{{ item.dateLabel }}</time>
+                        <div class="show-body">
+                            <h3>{{ item.title }}</h3>
+                            <p class="show-place">{{ item.place }}</p>
+                            <p>{{ item.text }}</p>
+                            {%- if item.link %}
+                            <p><a href="{{ item.link.url }}" target="_blank" rel="noopener" class="external">{{ item.link.label }}<span class="sr-only"> (opens in a new tab)</span></a></p>
+                            {%- endif %}
+                            {{ setlist(item.setlist, item.setlistUnordered) }}
+                        </div>
+                    </li>
+                    {%- endif %}
+                    {%- endfor %}
+                </ol>
+            </div>
+        </section>
+
+        <section class="work" aria-labelledby="work-title">
+            <div class="work-title">
+                <div class="wrap uk-center">
+                <h2 id="work-title"><b>What</b> was VOCA-UK?</h2>
+                <p class="intro">A not-for-profit, unofficial 3D CGI concert project featuring virtual singers from
+                    Japan. The name combined "VOCALOID" and "UK", and our logo recoloured the Union Jack with the
+                    Kagamine, Miku and MEIKO colours.</p>
+                </div>
+            </div>
+
+            <div class="band band-teal">
+                <div class="wrap band-grid uk-left">
+                    <div>
+                        <h3><b>In-person</b> concerts</h3>
+                        <p>One of the first vocalsynth projection-based systems in the UK, we brought the virtual singers to life on stages across the country.</p>
+                        <p>Every concert had its own set list. We also had smaller live events called "MINI".</p>
+                    </div>
+                    <img class="uk-band-photo" src="/assets/img/vocauk/rakucon.webp" width="1200" height="675" loading="lazy"
+                        alt="Capture showing the audience, Rin and Una at RakuCon 2022">
+                </div>
+            </div>
+
+            <div class="band band-red">
+                <div class="wrap band-grid band-grid-flip uk-right">
+                    <div>
+                        <h3><b>Online</b> concerts</h3>
+                        <p>YouTube-based experiences with music videos, stories and unique elements. A mixture of different formats and styles.</p>
+                        <p>We used these to experiment with new ideas, and to reach audiences who couldn't attend in person.</p>
+                    </div>
+                    <div class="band-photos">
+                        <img src="/assets/img/vocauk/temple.webp" width="1200" height="675" loading="lazy"
+                            alt="Senbonzakura Miku">
+                        <img src="/assets/img/vocauk/phone.webp" width="1200" height="675" loading="lazy"
+                            alt="Our experiment with vertical video and AR">
+                        <img src="/assets/img/vocauk/luka.webp" width="1600" height="900" loading="lazy"
+                            alt="Megurine Luka from the online show">
+                        <img src="/assets/img/vocauk/red.webp" width="1200" height="490" loading="lazy"
+                            alt="GUMI from the online show">
+                    </div>
+                </div>
+            </div>
+
+            <div class="band band-blue">
+                <div class="wrap uk-left">
+                    <h3><b>The</b> singers</h3>
+                    <ul class="uk-singers">
+                        {%- for singer in vocauk.singers %}
+                        <li>
+                            <img src="/assets/img/vocauk/singers/{{ singer.image }}.webp" width="400" height="400" loading="lazy" alt="">
+                            <span class="uk-singer-name"><b>{{ singer.first }}</b>{% if singer.second %} {{ singer.second }}{% endif %}</span>
+                            <span class="uk-singer-owner">{{ singer.owner }}</span>
+                        </li>
+                        {%- endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="band uk-next">
+                <div class="wrap">
+                    <h3><b>What</b> came next</h3>
+                    <p>In January 2024 the project restarted under a new name, VOCAWAVES, to better reflect our mission
+                        and values.</p>
+                    <a class="home-link" href="/">Read the VOCAWAVES story</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <img class="footer-logo" src="/assets/img/vocauk/logo.webp" width="1000" height="206" loading="lazy"
+                alt="VOCA-UK">
+            <ul class="socials">
+                <li><a href="https://www.youtube.com/@vocauk" target="_blank" rel="noopener">YouTube</a></li>
+                <li><a href="/">VOCAWAVES</a></li>
+            </ul>
+
+            <p class="legal">VOCA-UK was a non-commercial fan-run project, and no income was generated. The project was
+                not affiliated with any of the companies or individuals who licensed the characters, models, motions and
+                music to the public.</p>
+            <p class="legal">"VOCALOID" and "VOCALO" are registered trademarks of Yamaha Corporation. This page depicts
+                the characters Hatsune Miku, Kagamine Rin, Kagamine Len, Megurine Luka, MEIKO and KAITO of Crypton Future
+                Media, INC. based on the
+                <a href="https://piapro.jp/license/pcl/summary" target="_blank" rel="noopener">piapro Character License</a>.</p>
+            <p class="legal">Video contains stage by Philippe-n-12 and motion by ゲッツ/すぱにぃ/ノン (using LipFaceMaker).
+                Concert images contain models by YYB, ITzTETO, Roki-P, Maydayfireball and kuuwanko&amp;Rennya; motions by
+                Touzoku Tsubaki, mobiusP, KAZUSA, 菖蒲（あやめ）＠剣舞Ｐ, SWA 104 and Anatroccolo (using LipFaceMaker); and some
+                stages by komena, Jin and Mumumu. Performer models by YYB, Maydayfireball, kuuwanko&amp;Rennya, Jjinomu,
+                Rubeeish, FreezyChan-3Dreams and ITzTETO. Some poses by PandaSwagg2002.</p>
+            <p class="legal">&copy; 2022-2023 VOCA-UK TEAM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a class="to-top" href="#top" aria-label="Back to top"></a>
+    <script src="/assets/js/index.js"></script>
+</div>

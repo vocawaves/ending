@@ -9,25 +9,11 @@
     "type": "milestone",
     "date": "2022-07",
     "dateLabel": "July 2022",
-    "text": "First online concert, under the name VOCA-UK"
-  },
-  {
-    "type": "milestone",
-    "date": "2022-08",
-    "dateLabel": "August 2022",
-    "text": "First \"MINI\" in-person concert"
-  },
-  {
-    "type": "milestone",
-    "date": "2023-08",
-    "dateLabel": "August 2023",
-    "text": "Second in-person concert"
-  },
-  {
-    "type": "milestone",
-    "date": "2023-10",
-    "dateLabel": "October 2023",
-    "text": "Final in-person concert as VOCA-UK"
+    "text": "First online concert, under the name VOCA-UK",
+    "link": {
+      "url": "/vocauk/",
+      "label": "Read the VOCA-UK story"
+    }
   },
   {
     "type": "milestone",

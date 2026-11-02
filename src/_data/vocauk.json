@@ -1,0 +1,157 @@
+{
+  "timeline": [
+    {
+      "type": "milestone",
+      "date": "2021-10",
+      "dateLabel": "October 2021",
+      "text": "Initial ideas in the Hatsune Miku bot server"
+    },
+    {
+      "type": "milestone",
+      "date": "2022-06",
+      "dateLabel": "June 2022",
+      "text": "Project announced with our first trailer",
+      "link": {
+        "url": "https://www.youtube.com/watch?v=XS4pa5mIMdU",
+        "label": "Watch on YouTube",
+        "external": true
+      }
+    },
+    {
+      "type": "show",
+      "date": "2022-07-23",
+      "dateLabel": "23 July 2022",
+      "title": "VOCA-UK 2022 ONLINE",
+      "place": "YouTube",
+      "text": "Our first concert, streamed free on YouTube after more than seven months of work: 30 to 40 minutes of MMD music videos.",
+      "link": {
+        "url": "https://www.youtube.com/watch?v=4PNWSu-oOkw",
+        "label": "Watch on YouTube"
+      },
+      "setlist": [
+        "Senbonzakura",
+        "Viva Happy",
+        "KING",
+        "ECHO",
+        "Lost One's Weeping",
+        "Luka Luka Night Fever",
+        "Two Faced Lovers",
+        "World is Mine"
+      ]
+    },
+    {
+      "type": "show",
+      "date": "2022-08-20",
+      "dateLabel": "20 August 2022",
+      "title": "VOCA-UK MINI: LINK START",
+      "place": "RakuCon 2022, Manchester, UK",
+      "text": "Our first in-person concert, at the first ever RakuCon. We filled the room with all the equipment gathered in a week, since we had only done virtual events in the past.",
+      "link": {
+        "url": "https://www.youtube.com/watch?v=HBDDCn-pwW8",
+        "label": "Watch on YouTube"
+      }
+    },
+    {
+      "type": "show",
+      "date": "2022-08",
+      "dateLabel": "August - December 2022",
+      "title": "VOCA-UK SEASONS PROJECT",
+      "place": "YouTube",
+      "text": "A series of smaller, story-based online videos.",
+      "link": {
+        "url": "https://www.youtube.com/watch?v=X34o0EUfuuA&list=PLmitUgS9z7vplFXzhRZBSm7wIQP-wpPK4",
+        "label": "Watch playlist on YouTube"
+      }
+    },
+    {
+      "type": "show",
+      "date": "2023-08-12",
+      "dateLabel": "12 August 2023",
+      "title": "VOCA-UK 2023: RAKU READY",
+      "place": "RakuCon 2023",
+      "text": "Returning to RakuCon for our second major concert, we combined real life performers with vocal-synths and utilised a dual screen setup to bring additional visual elements to the stage.",
+      "link": {
+        "url": "https://www.youtube.com/watch?v=dbzX45YGQJo",
+        "label": "Watch on YouTube"
+      },
+      "setlistUnordered": true,
+      "setlist": [
+        "Butterfly on Your Right Shoulder",
+        "Clover Club",
+        "Common World Domination",
+        "Dance Robot Dance",
+        "The Disappearance of Hatsune Miku",
+        "Do My Best",
+        "Egorock",
+        "Fukkireta",
+        "Ghost Rule",
+        "Happy Synthesizer",
+        "KING",
+        "Mozaik Role",
+        "SHANTI",
+        "Sweet Magic"
+      ]
+    },
+    {
+      "type": "show",
+      "date": "2023-10-28",
+      "dateLabel": "28 October 2023",
+      "title": "VOCA-UK ATTACKS",
+      "place": "Anime Attacks 2023",
+      "text": "Our final in-person concert as VOCA-UK.",
+      "setlist": [
+        "GETCHA",
+        "The Snow White Princess Is",
+        "My Time",
+        "Melancholic",
+        "KING",
+        "Just Be Friends",
+        "Happy Halloween",
+        "Freedom Lolita",
+        "Dappou Rock",
+        "Colorful Marine Snow",
+        "Asu no Yozora Shoukaihan",
+        "1,2 Fanclub",
+        "Melt"
+      ]
+    },
+    {
+      "type": "milestone",
+      "key": true,
+      "date": "2024-01",
+      "dateLabel": "January 2024",
+      "text": "Project restarted as VOCAWAVES",
+      "link": {
+        "url": "/",
+        "label": "Read what happened next"
+      }
+    }
+  ],
+  "singers": [
+    {
+      "first": "Hatsune",
+      "second": "Miku",
+      "owner": "Crypton Future Media, INC.",
+      "image": "miku"
+    },
+    { "first": "Kagamine", "second": "Rin", "owner": "Crypton Future Media, INC.", "image": "rin" },
+    { "first": "Kagamine", "second": "Len", "owner": "Crypton Future Media, INC.", "image": "len" },
+    {
+      "first": "Megurine",
+      "second": "Luka",
+      "owner": "Crypton Future Media, INC.",
+      "image": "luka"
+    },
+    { "first": "KAITO", "owner": "Crypton Future Media, INC.", "image": "kaito" },
+    { "first": "MEIKO", "owner": "Crypton Future Media, INC.", "image": "meiko" },
+    { "first": "GUMI", "owner": "Internet Co., Ltd.", "image": "gumi" },
+    {
+      "first": "Otomachi",
+      "second": "Una",
+      "owner": "MTK Inc. & Internet Co., Ltd.",
+      "image": "una"
+    },
+    { "first": "Kasane", "second": "Teto", "owner": "TWINDRILL", "image": "teto" },
+    { "first": "IA", "owner": "1st PLACE Co., Ltd.", "image": "ia" }
+  ]
+}

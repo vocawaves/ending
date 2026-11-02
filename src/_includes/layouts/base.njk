@@ -11,13 +11,13 @@
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_GB">
-    <meta property="og:url" content="https://vocawaves.org/">
+    <meta property="og:url" content="https://vocawaves.org{{ page.url }}">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
-    <meta property="og:image" content="https://vocawaves.org/assets/img/og.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Hatsune Miku on stage at ICon 2025">
+    <meta property="og:image" content="https://vocawaves.org{{ ogImage or '/assets/img/og.jpg' }}">
+    <meta property="og:image:width" content="{{ ogImageWidth or 1200 }}">
+    <meta property="og:image:height" content="{{ ogImageHeight or 630 }}">
+    <meta property="og:image:alt" content="{{ ogImageAlt or 'Hatsune Miku on stage at ICon 2025' }}">
 
     <meta name="twitter:card" content="summary_large_image">
     {%- endif %}
@@ -26,7 +26,11 @@
     <meta name="robots" content="noindex">
     {%- endif %}
 
-    <meta name="theme-color" content="#8350d1">
+    {%- if favicon %}
+    <link rel="icon" href="{{ favicon }}">
+    {%- endif %}
+
+    <meta name="theme-color" content="{{ themeColor or '#8350d1' }}">
     <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 

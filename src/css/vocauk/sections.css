@@ -1,0 +1,100 @@
+.vocauk .history,
+.vocauk .work,
+.vocauk .work-title,
+.vocauk .band {
+  background: none;
+  color: white;
+}
+
+.vocauk .history {
+  padding-block: 7rem 5rem;
+}
+
+.vocauk .work-title {
+  padding-block: 5rem;
+  border-top: 1px solid var(--border);
+}
+
+.vocauk .work-title h2 {
+  font-size: clamp(1.9rem, 5vw, 3.5rem);
+}
+
+.vocauk .band {
+  padding-block: 5rem;
+}
+
+.uk-left,
+.uk-right {
+  padding-block: 0.5rem;
+}
+
+.uk-left {
+  padding-left: 30px;
+  border-left: 5px solid var(--teal);
+}
+
+.uk-right {
+  padding-right: 30px;
+  border-right: 5px solid var(--teal);
+  text-align: right;
+}
+
+.uk-right p {
+  margin-left: auto;
+}
+
+.uk-center {
+  text-align: center;
+}
+
+.uk-center .intro {
+  margin-inline: auto;
+}
+
+.uk-center .timeline {
+  text-align: left;
+}
+
+.uk-next {
+  text-align: center;
+}
+
+.uk-next p {
+  margin-inline: auto;
+}
+
+.uk-next .home-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.vocauk .work-title .intro {
+  color: var(--muted);
+}
+
+.uk-band-photo {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 62rem) {
+  .vocauk .history {
+    padding-block: 4rem 3rem;
+  }
+
+  .vocauk .work-title,
+  .vocauk .band {
+    padding-block: 3.5rem;
+  }
+
+  .uk-left,
+  .uk-right {
+    padding-inline: 0;
+    border: 0;
+    text-align: left;
+  }
+
+  .uk-right p {
+    margin-left: 0;
+  }
+}

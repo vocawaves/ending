@@ -38,7 +38,7 @@ description: Previously active. A record of our concerts and contributions to vo
                     {%- if item.type == "milestone" %}
                     <li class="milestone{% if item.key %} milestone-key{% endif %}">
                         <time datetime="{{ item.date }}">{{ item.dateLabel }}</time>
-                        <p>{{ item.text }}</p>
+                        <p>{{ item.text }}{% if item.link %}<br><a href="{{ item.link.url }}">{{ item.link.label }}</a>{% endif %}</p>
                     </li>
                     {%- else %}
                     <li class="show">
@@ -115,7 +115,7 @@ description: Previously active. A record of our concerts and contributions to vo
                         <h3>Live sound and video</h3>
                         <p>We provided A/V support for <a href="https://rakucon.co.uk" target="_blank" rel="noopener">RakuCon 2024</a> in
                             Manchester, maintaining equipment, running sound and video, and managing the stages. In earlier years we also gave concerts there as
-                            VOCA-UK.</p>
+                            <a href="/vocauk/">VOCA-UK</a>.</p>
                     </div>
                     <div class="band-photos">
                         <img src="/assets/img/raku.webp" width="403" height="288" loading="lazy"
