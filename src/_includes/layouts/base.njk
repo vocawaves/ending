@@ -32,9 +32,52 @@
 
     <meta name="theme-color" content="{{ themeColor or '#8350d1' }}">
     <link rel="stylesheet" href="/assets/css/index.css">
+    <noscript>
+        <style>
+            .to-top {
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+    <style>
+        .ie-warning {
+            display: none;
+        }
+
+        _:-ms-fullscreen, :root body {
+            overflow: hidden;
+        }
+
+        _:-ms-fullscreen, :root .ie-warning {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2147483647;
+            padding: 20vh 2rem 2rem;
+            background: #212121;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        _:-ms-fullscreen, :root .ie-warning h1,
+        _:-ms-fullscreen, :root .ie-warning p {
+            max-width: 40rem;
+            margin: 0 auto 1rem;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
+<div class="ie-warning" role="alert">
+    <h1>This browser isn't supported</h1>
+    <p>Please open vocawaves.org in a current version of Chrome, Edge, Firefox or Safari.</p>
+</div>
 {{ content | safe }}
 </body>
 

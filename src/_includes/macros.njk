@@ -7,7 +7,7 @@
 <details>
     <summary>Set list ({{ songs | length }} songs)</summary>
     <div class="setlist-clip">
-        <{{ "ul" if unordered else "ol" }} class="setlist">
+        <{{ "ul" if unordered else "ol" }} class="setlist" style="--rows: {{ ((songs | length) / 2) | round(0, 'ceil') }}">
             {%- for song in songs %}
             <li>{{ song }}</li>
             {%- endfor %}

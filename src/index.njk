@@ -50,8 +50,8 @@ description: Previously active. A record of our concerts and contributions to vo
                             {%- if item.link %}
                             <p><a href="{{ item.link.url }}" target="_blank" rel="noopener" class="external">{{ item.link.label }}<span class="sr-only"> (opens in a new tab)</span></a></p>
                             {%- endif %}
-                            {{ setlist(item.setlist) }}
                         </div>
+                        {{ setlist(item.setlist) }}
                         {%- if item.photo %}
                         <img class="show-photo" src="{{ item.photo.src }}" width="{{ item.photo.width }}" height="{{ item.photo.height }}" loading="lazy"
                             alt="{{ item.photo.alt }}">

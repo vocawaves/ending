@@ -59,4 +59,16 @@
   .vocauk .timeline > li:nth-child(even) p {
     margin-left: auto;
   }
+
+  .vocauk .setlist {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(var(--rows), auto);
+    justify-content: start;
+    column-gap: 3rem;
+  }
+
+  .vocauk .timeline > li:nth-child(even) .setlist {
+    justify-content: end;
+  }
 }
